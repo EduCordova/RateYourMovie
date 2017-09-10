@@ -13,7 +13,7 @@
 
 <script>
 import HeaderCine from './components/HeaderCine.vue'
-import PiePage from './components/PiePage.vue'
+import PiePage from './components/FooterCine.vue'
  export default {
    components:{HeaderCine,PiePage}
 
