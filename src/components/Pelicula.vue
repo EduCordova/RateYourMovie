@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container is-mobile">
 <div class="column">
   <center>  <h1 class="title is-1">Movie title</h1>     </center>
 </div>

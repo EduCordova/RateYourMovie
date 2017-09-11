@@ -1,11 +1,11 @@
 <template>
-
   <section>
-
-    <div class=" container is-mobile">
+    <div class="container is-fullhd fondo" >
     <center>
-        <h1 class="title is-1">Rate your movie</h1>       
-       <h4 class="subtitle is-4">Search a movie, find details about it and rate</h4>
+      <br><br><br><br><br><br><br><br>
+      <h4 class="subtitle is-4 blanco">Welcome!</h4>
+      <h1 class="title is-1 blanco">SEARCH AND RATE</h1>  
+       <h1 class="subtitle is-1 blanco">A MOVIE EASILY!</h1>
      </center>
       <div class="column">
         <b-autocomplete v-model="name" :data="data" placeholder="Search a movie title..." icon="search" field="title" :loading="isFetching" @input="getAsyncData" @select="option => selected = option">
@@ -26,9 +26,8 @@
           </template>
         </b-autocomplete>
       </div>
-    </div>
-
-    <nav class="container is-mobile">
+    </div>   
+     <nav class="container is-mobile">
       <p>
         <br>
         <div class="column">
@@ -42,10 +41,16 @@
       </div>
     </p>
     </nav>
+    
+</section>
 
 
 
-  </section>
+
+   
+ 
+
+
 </template>
 
 
@@ -84,3 +89,24 @@
   }
 
 </script>
+
+
+<style>
+.fondo{
+color:#fff;
+background-image:url(https://luishmr0.github.io/semanticmovies/img/bg.jpg);
+background-repeat:no-repeat;
+background-attachment:scroll;
+background-position:center center;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+width:100%;
+height:100%;
+}
+.blanco{
+color:#fff;
+font-family:'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+</style>
