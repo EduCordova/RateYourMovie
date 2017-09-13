@@ -11,9 +11,8 @@ Vue.use(VueRouter)
 Vue.use(Buefy);
 
 //instanciamos
-const router = new VueRouter({
-	mode: 'history',
-	routes
+const router = new VueRouter({	
+	routes,
 })
 
 
