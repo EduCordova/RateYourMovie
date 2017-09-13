@@ -1,15 +1,23 @@
 <template>
   <div class="container is-mobile">
 <div class="column">
-  <center>  <h1 class="title is-1">Movie title</h1>     </center>
+  <center>  <h1 class="title is-1"  >{{data.title}}</h1></center>
 </div>
- <center><img src="https://vignette.wikia.nocookie.net/breakingbad/images/e/e7/BB-S5B-Walt-590.jpg/revision/latest/scale-to-width-down/225?cb=20130928055404" alt=" Rate your movie!"> </center>
+ <center><img :src="uri" alt=" Rate your movie!" height="350" width="300"> </center>
+        <h1 class="title is-4">Descripcion :</h1>
+       <p>
+          {{data.overview}}
+        </p>
+     <br><br><br>
      <article class="media">
         <figure class="media-left">
           <p class="image is-64x64">
             <img src="http://bulma.io/images/placeholders/128x128.png">
           </p>
         </figure>
+
+       
+
         <div class="media-content">
           <div class="field">
             <p class="control">
@@ -30,8 +38,38 @@
 
 
 <script>
+import axios from 'axios'
     export default {
-        
+      mounted(){
+        this.geturl();
+      },
+        data(){
+          return {
+            id: this.$route.params.id,
+            titulo:"titulo",
+            data:[],
+            
+          }
+        },
+   
+        methods:{
+                geturl() {
+         
+          axios.get(`https://api.themoviedb.org/3/movie/${this.id}?language=es-ES&api_key=bb6f51bef07465653c3e553d6ab161a8`)
+          .then((info)=>{
+                this.data=info.data;
+                console.log(this.data)
+          });
+              
+
+             },
+        },
+        computed:{
+          uri(){
+            var url= `https://image.tmdb.org/t/p/w500/${this.data.poster_path}`
+            return url
+          }
+        }
     }
 </script>
 

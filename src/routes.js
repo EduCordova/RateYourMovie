@@ -6,6 +6,6 @@ import NotFound from './components/NotFound.vue'
 //exportamos las rutas
 export const routes =[
     {path:'/',component:Home},
-    {path:'/pelicula',component:Pelicula},
+    {path:'/detalle/:id',component:Pelicula},
 	{path:'*',component:NotFound}
 ]

@@ -8,10 +8,11 @@
        <h1 class="subtitle is-1 blanco">A MOVIE EASILY!</h1>
      </center>
       <div class="column">
-        <b-autocomplete v-model="name" :data="data" placeholder="Search a movie title..." icon="search" field="title" :loading="isFetching" @input="getAsyncData" @select="option => selected = option">
-          <template scope="props">
-            <div class="media">
-              <div class="media-left">
+        <b-autocomplete  v-model="name" :data="data" placeholder="Search a movie title..." icon="search" field="title" :loading="isFetching" @input="getAsyncData" @select="option => selected = option">
+          <template scope="props" >
+
+            <div class="media" @click="mensaje(props.option.id)">
+              <div class="media-left"  >
                 <img width="32" :src="`https://image.tmdb.org/t/p/w500/${props.option.poster_path}`">
               </div>
               <div class="media-content">
@@ -44,12 +45,6 @@
     
 </section>
 
-<<<<<<< HEAD
-    <section>
-        
-        <div class=" container is-mobile">
-=======
->>>>>>> 9811919fb31b57789a65fb905a6cf7de6dde823b
 
 
 
@@ -74,15 +69,6 @@
           selected: null,
           isFetching: false
         }
-<<<<<<< HEAD
-    }
-</script>
-
-<style>
-
-
-</style>
-=======
       },
       methods: {
         // You have to install and import debounce to use it,
@@ -99,7 +85,12 @@
             }, response => {
               this.isFetching = false
             })
-        }, 500)
+        }, 500),
+
+        mensaje(dato){
+          console.log(dato)
+          this.$router.push('/detalle/'+dato)
+        }
       }
   }
 
@@ -125,4 +116,3 @@ color:#fff;
 font-family:'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
 }
 </style>
->>>>>>> 9811919fb31b57789a65fb905a6cf7de6dde823b
