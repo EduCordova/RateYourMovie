@@ -15,9 +15,8 @@
             <div id="navmenu" class="navbar-menu">
                 <div @click="reload" class="navbar-end">                    
                         <router-link  class="navbar-item " to="/" active-class="is-active"  exact>SEARCH</router-link>
-                        <router-link  class="navbar-item" to="/pelicula" active-class="is-active" >CATEGORIES</router-link>
-                        <router-link  class="navbar-item" to="/pelicula" active-class="is-active" >CINEMAS</router-link>
-                        <router-link  class="navbar-item" to="/pelicula" active-class="is-active" >ABOUT</router-link>
+                        <router-link  class="navbar-item" to="/movie" active-class="is-active" >CATEGORIES</router-link>
+                        <router-link  class="navbar-item" to="/about" active-class="is-active" >ABOUT</router-link>
                         
                 </div>
             </div>
