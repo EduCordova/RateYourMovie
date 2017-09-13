@@ -1,33 +1,28 @@
 <template>
     <div>
-
-        <nav class="navbar " role="navigation" aria-label="main navigation">
+        <nav class="navbar is-active" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <router-link to="/" class="navbar-item" tag="a">
-                    
-                   <strong> RATE YOUR MOVIE </strong>
-
+                    <img src="https://www.mariowiki.com/images/thumb/f/f5/StarMK8.png/200px-StarMK8.png" alt=" Rate your movie!" width="30" height="30">
+                      <strong> RATE YOUR MOVIE! </strong>
                 </router-link>
-
                 <div class="navbar-burger burger" data-target="navmenu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-
             <div id="navmenu" class="navbar-menu">
-                <div @click="reload" class="navbar-end">
-                    
-                        <router-link  class="navbar-item " to="/" active-class="is-active"  exact>HOME</router-link>
+                <div @click="reload" class="navbar-end">                    
+                        <router-link  class="navbar-item " to="/" active-class="is-active"  exact>SEARCH</router-link>
+                        <router-link  class="navbar-item" to="/pelicula" active-class="is-active" >CATEGORIES</router-link>
+                        <router-link  class="navbar-item" to="/pelicula" active-class="is-active" >CINEMAS</router-link>
                         <router-link  class="navbar-item" to="/pelicula" active-class="is-active" >ABOUT</router-link>
                         
                 </div>
             </div>
-
         </nav>
-
-    
+   
     </div>
 </template>
 
@@ -77,6 +72,3 @@ methods:{
 
 </script>
 
-<style>
-
-</style>
