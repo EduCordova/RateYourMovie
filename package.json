@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "buefy": "^0.5.2",
     "lodash.debounce": "^4.0.8",
     "style-loader": "^0.18.2",
     "vue": "^2.3.3",

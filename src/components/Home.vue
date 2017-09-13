@@ -1,6 +1,6 @@
 <template>
 
-    <section >
+    <section>
         
         <div class=" container is-mobile">
 
@@ -71,3 +71,8 @@ import axios from 'axios'
         }
     }
 </script>
+
+<style>
+
+
+</style>

@@ -2,13 +2,13 @@
  <div>
    
    <HeaderCine></HeaderCine>
-
+<div  class="bod">
     <router-view></router-view>
-
-  <PiePage></PiePage>
+</div>
+<div  class="foot">
+  <PiePage ></PiePage>
+</div>
  </div>
- 
- 
 </template>
 
 <script>
@@ -20,6 +20,10 @@ import PiePage from './components/PiePage.vue'
  }
 </script>
 
+
 <style>
+
+
+
 
 </style>
