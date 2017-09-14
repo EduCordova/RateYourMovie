@@ -37,7 +37,11 @@
 
 
 <script>
-
+export default {
+  created(){
+    window.document.title = "About"
+  }
+}
 </script>
 
 <style>

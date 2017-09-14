@@ -73,7 +73,9 @@
   import debounce from 'lodash/debounce'
 
   export default {
-
+    created(){
+      window.document.title = "Home"
+    },
     data() {
         return {
           data: [],

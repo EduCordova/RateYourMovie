@@ -48,6 +48,9 @@
 <script>
 import axios from 'axios'
 export default {
+  created(){
+    window.document.title = "Movie"
+  },
   mounted() {
     this.geturl();
    // this.date(this.data.release_date)

@@ -15,7 +15,11 @@
 
 
 <script>
-    
+    export default {
+        created(){
+            window.document.title = "Categories"
+        }
+    }
 </script>
 
 <style>
