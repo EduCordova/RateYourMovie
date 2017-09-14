@@ -101,7 +101,7 @@ export default {
     }, 
 
   geturlcast() {
-      axios.get(`http://api.themoviedb.org/3/movie/${this.id}/casts?api_key=bb6f51bef07465653c3e553d6ab161a8`)
+      axios.get(`https://api.themoviedb.org/3/movie/${this.id}/casts?api_key=bb6f51bef07465653c3e553d6ab161a8`)
         .then((info) => {
           this.data2 = info.data;
           console.log(this.data2)
