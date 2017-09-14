@@ -14,10 +14,8 @@
     
       <div class="column ">
 
-
         <b-autocomplete  v-model="name" :data="data" placeholder="Search a movie title..." icon="search" field="title" :loading="isFetching" @input="getAsyncData" @select="option => selected = option">
           <template scope="props" >
-
             <div class="media" @click="mensaje(props.option.id)">
               <div class="media-left"  >
                 <img width="32" :src="`https://image.tmdb.org/t/p/w500/${props.option.poster_path}`">
@@ -33,26 +31,14 @@
             </div>
           </template>
         </b-autocomplete>
-
-
-      </div>
-      
-
-     
+      </div>        
     </div>   
-     <nav class="container is-mobile">
-      <p>
-        <br>
-        <div class="column">
-          <p class="content"><b>Movie details:</b> {{ selected }}</p>
-          {{ selected }}
-        </div>
-      </p>
-      <p>
-      <div class="level-item has-text-centered">
+
+     <nav class="container is-mobile">     
+     <h4 class="subtitle is-4"><center>Proudly done with PHP! (?)</center></h4>
+      <br><div class="level-item has-text-centered">
         <img src="http://lhmr.tech/content/images/2016/10/darth.png" alt="Rate your movie!"  width="150" height="160">
       </div>
-    </p>
     </nav>
     
 </section>
