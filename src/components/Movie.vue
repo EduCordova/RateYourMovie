@@ -4,7 +4,7 @@
       <center>
         <h1 class="title is-1">{{data.title}}</h1>
 
-        <h5 class="title is-5"  >{{data.release_date}} </h5>
+        
       </center>
     </div>
     <center>
@@ -14,11 +14,17 @@
       </p>
       
     </center>
-    
-    <h1 class="title is-4">Descripcion :</h1>
+    <h1 class="title is-4"  >Título original: {{data.original_title}} </h1>
+    <h1 class="title is-4"  >Fecha de estreno: {{data.release_date}} </h1>
+    <h1 class="title is-4"  >Duración: {{data.runtime}} minutos</h1>
+    <h1 class="title is-4"  >Género: {{data.genres[0].name}} </h1>
+    <h1 class="title is-4">Descripcion : </h1>
     <p>
       {{data.overview}}
     </p>
+    <br>
+    <h1 class="title is-5">Presupuesto: {{data.budget}} </h1>
+    <h1 class="title is-5">Recaudación: {{data.revenue}} </h1>
     <br><br><br>
     <article class="media">
       <figure class="media-left">

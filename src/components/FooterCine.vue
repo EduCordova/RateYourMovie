@@ -4,7 +4,7 @@
         <div class="container">
           <div class="content has-text-centered">
             <p>
-              2017 © <strong>Rate your movie!</strong> by <a href="http://github.com">edu</a> and <a href="http://github.com">vader</a>.
+              2017 © <strong>Rate your movie!</strong> by <a href="http://github.com/educordova">edu</a> and <a href="http://github.com/luishmr0">vader</a>.
             </p>
             <p>
               <a class="icon" href="https://github.com">
