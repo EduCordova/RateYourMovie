@@ -1,13 +1,15 @@
 //import vistas
 import Home from './components/Home.vue'
-import Pelicula from './components/Pelicula.vue'
+import Movie from './components/Movie.vue'
 import NotFound from './components/NotFound.vue'
-import Acerca from './components/About.vue'
+import About from './components/About.vue'
+import Categories  from './components/Categories.vue'
 
 //exportamos las rutas
 export const routes =[
     {path:'/',component:Home},
-    {path:'/movie/:id',component:Pelicula},
-    {path:'/about',component:Acerca},
+    {path:'/movies/:id',component:Movie},
+    {path:'/about',component:About},
+    {path:'/categories',component:Categories},
 	{path:'*',component:NotFound}
 ]

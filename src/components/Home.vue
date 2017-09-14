@@ -2,12 +2,19 @@
   <section>
     <div class="container is-fullhd fondo" >
     <center>
-      <br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br>
       <h4 class="subtitle is-4 blanco">Welcome!</h4>
       <h1 class="title is-1 blanco">SEARCH AND RATE</h1>  
        <h1 class="subtitle is-1 blanco">A MOVIE EASILY!</h1>
      </center>
-      <div class="column">
+     <br>
+
+    
+     
+    
+      <div class="column ">
+
+
         <b-autocomplete  v-model="name" :data="data" placeholder="Search a movie title..." icon="search" field="title" :loading="isFetching" @input="getAsyncData" @select="option => selected = option">
           <template scope="props" >
 
@@ -26,7 +33,12 @@
             </div>
           </template>
         </b-autocomplete>
+
+
       </div>
+      
+
+     
     </div>   
      <nav class="container is-mobile">
       <p>
@@ -89,7 +101,7 @@
 
         mensaje(dato){
           console.log(dato)
-          this.$router.push('/detalle/'+dato)
+          this.$router.push('/movies/'+dato)
         }
       }
   }
